@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+  color: black;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+p {
+  line-height: 1.7;
+  margin: 1rem 0;
+  color: #837d87;
+}
+
+h1, h2 {
+  font-size: 2.9rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+header {
+  padding: 1.5rem 0;
+}
+
+header .header-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-container {
+  background-color: #2d2640;
+}
+
+.hero-container img {
+  width: 100%;
+}
+
+.hero-container__content {
+  text-align: center;
+  padding: 5.5rem 0;
+  position: relative;
+}
+
+.hero-container__content h1 {
+  color: white;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  z-index: 9;
+  position: relative;
+}
+
+.hero-container__content p {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.hero-container__content::before {
+  content: url(/assets/images/bg-pattern-intro-left-mobile.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-container__content::after {
+  content: url(/assets/images/bg-pattern-intro-right-mobile.svg);
+  position: absolute;
+  right: 0;
+}
+
+.overview {
+  padding: 8.5rem 0;
+}
+
+.overview .overview-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  text-align: center;
+  padding-top: 3rem;
+  position: relative;
+}
+
+.overview .overview-container::before {
+  content: '';
+  height: .1rem;
+  width: 9.5rem;
+  background-color: rgba(10, 10, 10, 0.2);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.overview .overview-container h2 {
+  margin-bottom: 5rem;
+}
+
+.overview .overview-container ul li {
+  margin-bottom: 3.5rem;
+}
+
+.overview .overview-container ul li svg {
+  margin-bottom: 2rem;
+}
+
+.overview .overview-container ul li:last-of-type {
+  margin-bottom: initial;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.hamburger {
+  background: url(/assets/images/icon-hamburger.svg) no-repeat center;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+}
+
+.link-button {
+  padding: .75em 1.25em;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid white;
+  display: inline-block;
+  letter-spacing: .1em;
+}
+
+.link-button--black {
+  color: black;
+  border-color: black;
+}
+/*# sourceMappingURL=styles.css.map */

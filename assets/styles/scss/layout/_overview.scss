@@ -1,0 +1,31 @@
+.overview {
+    padding: 8.5rem 0;
+    .overview-container {
+        @include wide-container;
+        text-align: center;
+        padding-top: 3rem;
+        position: relative;
+        &::before {
+            content: '';
+            height: .1rem;
+            width: 9.5rem;
+            background-color: $Very-Light-Gray2;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h2 {
+            margin-bottom: 5rem;
+        }
+        ul li {
+            margin-bottom: 3.5rem;
+            svg {
+                margin-bottom: 2rem;
+            }
+            &:last-of-type {
+                margin-bottom: initial;
+            }
+        }
+    }
+}

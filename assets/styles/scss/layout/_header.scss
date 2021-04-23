@@ -1,5 +1,9 @@
 header {
+    background: white;
     padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     .header-container {
         @include wide-container;
         @include space-between;

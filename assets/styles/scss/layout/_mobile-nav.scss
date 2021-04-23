@@ -1,0 +1,40 @@
+.nav-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: $Very-Dark-Violet;
+    z-index: 1;
+    top: 5.15rem;
+    text-align: center;
+    background-image: url(/assets/images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+    // transform: translateX(100%);
+    transition: opacity .3s;
+    ul {
+        padding: 2rem;
+        font-weight: 700;
+        li {
+            margin-bottom: 2rem;
+            a {
+                color: $Very-Light-Gray;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                font-size: 1.25rem;
+            }
+            .link-button {
+                display: block;
+            }
+        }
+    }
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+// body {
+//     overflow: hidden;
+// }

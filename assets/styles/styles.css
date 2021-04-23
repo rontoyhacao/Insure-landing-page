@@ -128,11 +128,11 @@ header .header-container {
   visibility: visible;
 }
 
-.hero-container {
+.hero {
   background-color: #2d2640;
 }
 
-.hero-container img {
+.hero-container .intro-mobile {
   width: 100%;
 }
 
@@ -170,6 +170,44 @@ header .header-container {
   content: url(/assets/images/bg-pattern-intro-right-mobile.svg);
   position: absolute;
   right: 0;
+}
+
+.hero-container .intro-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 30rem;
+  }
+  .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4rem 0;
+    width: 88%;
+    margin: 0 auto;
+    max-width: 70rem;
+  }
+  .hero-container .intro-mobile {
+    display: none;
+  }
+  .hero-container .intro-desktop {
+    display: block;
+    height: 30rem;
+  }
+  .hero-container__content {
+    padding: 2rem 0;
+  }
+  .hero-container__content h1, .hero-container__content p {
+    margin-left: 0;
+    margin-right: 0;
+    width: initial;
+    max-width: initial;
+  }
+  .hero-container__content::before, .hero-container__content::after {
+    content: none;
+  }
 }
 
 .overview {

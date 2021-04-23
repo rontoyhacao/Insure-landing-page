@@ -1,6 +1,8 @@
-.hero-container {
+.hero {
     background-color: $Dark-Violet;
-    img {
+}
+.hero-container {
+    .intro-mobile {
         width: 100%;
     }
     &__content {
@@ -28,6 +30,39 @@
             content: url(/assets/images/bg-pattern-intro-right-mobile.svg);
             position: absolute;
             right: 0;
+        }
+    }
+    .intro-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 30rem;
+    }
+    .hero-container {
+        display: flex;
+        padding: 4rem 0;
+        @include wide-container;
+        .intro-mobile {
+            display: none;
+        }
+        .intro-desktop {
+            display: block;
+            height: 30rem;
+        }
+        &__content {
+            padding: 2rem 0;
+            h1, p {
+                margin-left: 0;
+                margin-right: 0;
+                width: initial;
+                max-width: initial;
+            }
+            &::before, &::after {
+                content: none;
+            }
         }
     }
 }

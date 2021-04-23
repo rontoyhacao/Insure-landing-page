@@ -1,3 +1,60 @@
+footer {
+    background-color: $Very-Light-Gray;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: url(/assets/images/bg-pattern-footer-mobile.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .footer-container {
+        @include wide-container;
+        text-align: center;
+        padding: 5.5rem 0;
+        position: relative;
+        &__upper {
+            border-bottom: 1px solid $Very-Light-Gray2;
+            padding-bottom: 2rem;
+            img {
+                margin-bottom: 1.75rem;
+            }
+            .social-links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    margin: 0 .5rem;
+                    a {
+                        color: $Dark-Grayish-Violet;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        &__lower {
+            padding-top: 2rem;
+            .footer-nav {
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: .1em;
+                h4 {
+                    font-family: inherit;
+                    color: $Dark-Grayish-Violet;
+                }
+                ul {
+                    margin: 2rem 0;
+                    li {
+                        margin-bottom: 1rem;
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 

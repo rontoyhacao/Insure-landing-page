@@ -1,0 +1,25 @@
+.works {
+    @include wide-container;
+    margin-bottom: 9rem;
+    .works-container {
+        background-color: $Dark-Violet;
+        text-align: center;
+        padding: 4rem 2rem;
+        position: relative;
+        &::before {
+            content: url(/assets/images/bg-pattern-how-we-work-mobile.svg);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: $Very-Light-Gray;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        a {
+            position: relative;
+        }
+    }
+}

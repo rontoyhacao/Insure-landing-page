@@ -8,16 +8,15 @@
         padding: 5.5rem 0;
         position: relative;
         h1 {
-            color: white;
+            color: $Very-Light-Gray;
             @include wide-container;
-            z-index: 9;
             position: relative;
         }
         p {
             @include wide-container;
             margin-top: 1rem;
             margin-bottom: 2rem;
-            color: white;
+            color: $Very-Light-Gray;
         }
         &::before {
             content: url(/assets/images/bg-pattern-intro-left-mobile.svg);

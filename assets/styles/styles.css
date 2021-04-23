@@ -95,11 +95,10 @@ header .header-container {
 }
 
 .hero-container__content h1 {
-  color: white;
+  color: #fafafa;
   width: 88%;
   margin: 0 auto;
   max-width: 70rem;
-  z-index: 9;
   position: relative;
 }
 
@@ -109,7 +108,7 @@ header .header-container {
   max-width: 70rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #fafafa;
 }
 
 .hero-container__content::before {
@@ -164,6 +163,117 @@ header .header-container {
 
 .overview .overview-container ul li:last-of-type {
   margin-bottom: initial;
+}
+
+.works {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  margin-bottom: 9rem;
+}
+
+.works .works-container {
+  background-color: #2d2640;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.works .works-container::before {
+  content: url(/assets/images/bg-pattern-how-we-work-mobile.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.works .works-container h2 {
+  font-size: 2.5rem;
+  color: #fafafa;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.works .works-container a {
+  position: relative;
+}
+
+footer {
+  background-color: #fafafa;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: url(/assets/images/bg-pattern-footer-mobile.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer .footer-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  text-align: center;
+  padding: 5.5rem 0;
+  position: relative;
+}
+
+footer .footer-container__upper {
+  border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+  padding-bottom: 2rem;
+}
+
+footer .footer-container__upper img {
+  margin-bottom: 1.75rem;
+}
+
+footer .footer-container__upper .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container__upper .social-links li {
+  margin: 0 .5rem;
+}
+
+footer .footer-container__upper .social-links li a {
+  color: #837d87;
+  font-size: 1.5rem;
+}
+
+footer .footer-container__lower {
+  padding-top: 2rem;
+}
+
+footer .footer-container__lower .footer-nav {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+footer .footer-container__lower .footer-nav h4 {
+  font-family: inherit;
+  color: #837d87;
+}
+
+footer .footer-container__lower .footer-nav ul {
+  margin: 2rem 0;
+}
+
+footer .footer-container__lower .footer-nav ul li {
+  margin-bottom: 1rem;
+}
+
+footer .footer-container__lower .footer-nav ul li a {
+  color: black;
 }
 
 .attribution {

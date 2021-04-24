@@ -29,7 +29,7 @@ footer {
                         color: $Dark-Grayish-Violet;
                         font-size: 1.5rem;
                         &:hover {
-                            color: black;
+                            color: $Very-Dark-Violet;
                         }
                     }
                 }
@@ -50,7 +50,7 @@ footer {
                     li {
                         margin-bottom: 1rem;
                         a {
-                            color: black;
+                            color: $Very-Dark-Violet;
                             &:hover {
                                 text-decoration: underline;
                             }

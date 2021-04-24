@@ -54,14 +54,14 @@
                     color: $Dark-Grayish-Violet;
                     font-size: initial;
                     &:hover {
-                        color: black;
+                        color: $Very-Dark-Violet;
                     }
                 }
                 .link-button {
-                    color: black;
-                    border-color: black;
+                    color: $Very-Dark-Violet;
+                    border-color: $Very-Dark-Violet;
                     &:hover {
-                        background: black;
+                        background: $Very-Dark-Violet;
                         color: $Very-Light-Gray;
                     }
                 }

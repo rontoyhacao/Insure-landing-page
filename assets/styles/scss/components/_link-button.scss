@@ -6,12 +6,8 @@
     display: inline-block;
     letter-spacing: .1em;
     transition: background .2s;
-    &--black {
-        color: black;
-        border-color: black;
-    }
     &:hover {
         background-color: $Very-Light-Gray;
-        color: black;
+        color: $Very-Dark-Violet;
     }
 }

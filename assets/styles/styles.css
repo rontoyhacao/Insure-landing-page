@@ -40,7 +40,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', serif;
-  color: black;
+  color: #2b272f;
 }
 
 body {
@@ -166,14 +166,14 @@ header .header-container {
     font-size: initial;
   }
   .nav-container ul li a:hover {
-    color: black;
+    color: #2b272f;
   }
   .nav-container ul li .link-button {
-    color: black;
-    border-color: black;
+    color: #2b272f;
+    border-color: #2b272f;
   }
   .nav-container ul li .link-button:hover {
-    background: black;
+    background: #2b272f;
     color: #fafafa;
   }
 }
@@ -475,7 +475,7 @@ footer .footer-container__upper .social-links li a {
 }
 
 footer .footer-container__upper .social-links li a:hover {
-  color: black;
+  color: #2b272f;
 }
 
 footer .footer-container__lower {
@@ -502,7 +502,7 @@ footer .footer-container__lower .footer-nav ul li {
 }
 
 footer .footer-container__lower .footer-nav ul li a {
-  color: black;
+  color: #2b272f;
 }
 
 footer .footer-container__lower .footer-nav ul li a:hover {
@@ -584,13 +584,8 @@ footer .footer-container__lower .footer-nav ul li a:hover {
   transition: background .2s;
 }
 
-.link-button--black {
-  color: black;
-  border-color: black;
-}
-
 .link-button:hover {
   background-color: #fafafa;
-  color: black;
+  color: #2b272f;
 }
 /*# sourceMappingURL=styles.css.map */

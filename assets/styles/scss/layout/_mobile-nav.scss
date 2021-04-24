@@ -35,6 +35,37 @@
     opacity: 1;
     visibility: visible;
 }
-// body {
-//     overflow: hidden;
-// }
+
+@media screen and (min-width: 55em) {
+    .nav-container {
+        opacity: initial;
+        visibility: initial;
+        width: initial;
+        height: initial;
+        position: initial;
+        background: initial;
+        ul {
+            display: flex;
+            align-items: center;
+            padding: initial;
+            li {
+                margin: 0 .5rem;
+                a {
+                    color: $Dark-Grayish-Violet;
+                    font-size: initial;
+                    &:hover {
+                        color: black;
+                    }
+                }
+                .link-button {
+                    color: black;
+                    border-color: black;
+                    &:hover {
+                        background: black;
+                        color: $Very-Light-Gray;
+                    }
+                }
+            }
+        }
+    }
+}

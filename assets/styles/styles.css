@@ -140,6 +140,44 @@ header .header-container {
   visibility: visible;
 }
 
+@media screen and (min-width: 55em) {
+  .nav-container {
+    opacity: initial;
+    visibility: initial;
+    width: initial;
+    height: initial;
+    position: initial;
+    background: initial;
+  }
+  .nav-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: initial;
+  }
+  .nav-container ul li {
+    margin: 0 .5rem;
+  }
+  .nav-container ul li a {
+    color: #837d87;
+    font-size: initial;
+  }
+  .nav-container ul li a:hover {
+    color: black;
+  }
+  .nav-container ul li .link-button {
+    color: black;
+    border-color: black;
+  }
+  .nav-container ul li .link-button:hover {
+    background: black;
+    color: #fafafa;
+  }
+}
+
 .hero {
   background-color: #2d2640;
 }
@@ -527,6 +565,12 @@ footer .footer-container__lower .footer-nav ul li a:hover {
   height: 2rem;
   width: 2rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 55em) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .link-button {

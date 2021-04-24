@@ -6,6 +6,7 @@
         text-align: center;
         padding: 4rem 2rem;
         position: relative;
+        overflow: hidden;
         &::before {
             content: url(/assets/images/bg-pattern-how-we-work-mobile.svg);
             position: absolute;
@@ -20,6 +21,21 @@
         }
         a {
             position: relative;
+        }
+    }
+}
+
+@media screen and (min-width: 55em) {
+    .works-container {
+        @include space-between;
+        padding: 4rem !important;
+        &::before {
+            content: url(/assets/images/bg-pattern-how-we-work-desktop.svg) !important;
+        }
+        h2 {
+            margin: 0 !important;
+            text-align: initial !important;
+            font-size: 3.25rem !important;
         }
     }
 }

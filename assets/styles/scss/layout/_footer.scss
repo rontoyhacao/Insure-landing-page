@@ -28,6 +28,9 @@ footer {
                     a {
                         color: $Dark-Grayish-Violet;
                         font-size: 1.5rem;
+                        &:hover {
+                            color: black;
+                        }
                     }
                 }
             }
@@ -48,6 +51,9 @@ footer {
                         margin-bottom: 1rem;
                         a {
                             color: black;
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
@@ -63,3 +69,34 @@ footer {
     }
 }
     
+@media screen and (min-width: 48em) {
+    footer {
+        &::before {
+            content: url(/assets/images/bg-pattern-footer-desktop.svg);
+        }
+        .footer-container {
+            text-align: initial !important;
+            padding: 4rem;
+            &__upper {
+                @include space-between;
+                img {
+                    margin: 0 !important;
+                }
+            }
+            &__lower {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 55em) {
+    .footer-container__lower {
+        grid-template-columns: repeat(4, 1fr) !important;
+        .footer-nav ul {
+            margin-bottom: 0 !important;
+        }
+    }
+}

@@ -23,3 +23,15 @@ h1, h2 {
 h3 {
     font-size: 1.75rem;
 }
+
+@media screen and (min-width: 64em) {
+    h1, h2 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    h1, h2 {
+        font-size: 4.5rem;
+    }
+}

@@ -1,12 +1,17 @@
 .link-button {
     padding: .75em 1.25em;
     text-transform: uppercase;
-    color: white;
-    border: 2px solid white;
+    color: $Very-Light-Gray;
+    border: 2px solid $Very-Light-Gray;
     display: inline-block;
     letter-spacing: .1em;
+    transition: background .2s;
     &--black {
         color: black;
         border-color: black;
+    }
+    &:hover {
+        background-color: $Very-Light-Gray;
+        color: black;
     }
 }

@@ -29,3 +29,21 @@
         }
     }
 }
+
+@media screen and (min-width: 55em) {
+    .overview {
+        padding: 19rem 0 6rem;
+        .overview-container {
+            text-align: initial !important;
+            &::before {
+                left: 0 !important;
+                transform: initial !important;
+            }
+            ul {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+        }
+    }
+}
